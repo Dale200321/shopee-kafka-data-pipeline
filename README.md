@@ -1,5 +1,5 @@
 Shopee Data Pipeline and Real-time Analytics
-Dự án này tập trung vào việc xây dựng hệ thống xử lý dữ liệu đơn hàng theo thời gian thực và thực hiện phân tích thống kê trên tập dữ liệu thu thập được.
+Dự án này tập trung vào việc xây dựng hệ thống xử lý dữ liệu đơn hàng theo thời gian thực và thực hiện phân tích thống kê trên tập dữ liệu thu thập được. Các thao tác được thực hiện trên VSCode và có sự hỗ trợ của AI Gemini.
 
 1. Công nghệ sử dụng
 Hệ thống: Docker, Docker-compose.
@@ -8,7 +8,7 @@ Luồng dữ liệu: Apache Kafka, Zookeeper.
 
 Cơ sở dữ liệu: PostgreSQL.
 
-Phân tích: Python (Pandas, Statsmodels, SQLAlchemy).
+Phân tích: Python (Pandas, Statsmodels).
 
 2. Quy trình thực hiện
 Giả lập luồng dữ liệu đơn hàng từ Shopee và đẩy vào Kafka Topic.
