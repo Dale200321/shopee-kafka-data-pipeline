@@ -29,6 +29,6 @@ try:
         producer.send(topic_name, value=data)
         print(f"📦 Đã gửi đơn hàng: {data}")
         
-        time.sleep(2) # Đợi 2 giây bắn 1 đơn cho dễ nhìn
+        time.sleep(2) # Bắn đơn hàng mỗi 2 giây
 except KeyboardInterrupt:
     print("🛑 Đã dừng bơm dữ liệu.")
