@@ -11,7 +11,7 @@ producer = KafkaProducer(
 
 topic_name = 'shopee_orders'
 
-print("🚀 Đang bắt đầu bơm đơn hàng vào Kafka... Nhấn Ctrl+C để dừng.")
+print(" Đang bắt đầu bơm đơn hàng vào Kafka... Nhấn Ctrl+C để dừng.")
 
 # 2. Vòng lặp giả lập đơn hàng
 customers = ['Ivan', 'Peter', 'Gemini', 'An', 'Binh']
