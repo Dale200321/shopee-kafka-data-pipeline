@@ -2,7 +2,7 @@ import json
 import psycopg2
 from kafka import KafkaConsumer
 
-# 1. Kết nối tới Postgres (Cái kho)
+# 1. Kết nối tới Postgres
 conn = psycopg2.connect(
     host="localhost",
     database="shopee_data",
@@ -12,7 +12,7 @@ conn = psycopg2.connect(
 )
 cursor = conn.cursor()
 
-# 2. Kết nối tới Kafka (Cái băng chuyền)
+# 2. Kết nối tới Kafka
 consumer = KafkaConsumer(
     'shopee_orders',
     bootstrap_servers=['localhost:9092'],
@@ -20,7 +20,7 @@ consumer = KafkaConsumer(
     value_deserializer=lambda x: json.loads(x.decode('utf-8'))
 )
 
-print("🕵️ Consumer đang đợi hốt đơn hàng từ Kafka... Nhấn Ctrl+C để dừng.")
+print(" Consumer đang đợi hốt đơn hàng từ Kafka... Nhấn Ctrl+C để dừng.")
 
 try:
     for message in consumer:
